@@ -26,7 +26,7 @@ $qq = mysqli_query($konek,$sql);
     <div class="navbar">
         <navbar>
             <p class="judul">TODOLIST</p>
-            <a href="profile.php" class="akun"><?= $_SESSION['username']?></a>
+            <a href="profil.php" class="akun"><?= $_SESSION['username']?></a>
         </navbar>
     </div>
     <div class="main">
