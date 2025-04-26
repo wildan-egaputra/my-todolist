@@ -7,13 +7,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $sql = "SELECT*FROM user where username = $user";
+    $sql = "SELECT*FROM user where username = '$user'";
     $qq = mysqli_query($konek,$sql);
 
     if($bar = mysqli_fetch_assoc($qq)){
         $pwh = password_verify($pass, $bar['password']);
         if($pwh == $bar['password']){
             $_SESSION['username'] = $bar['username'];
+            $_SESSION['id_user'] = $bar['id_user'];
             header("location:dashboard.php");
         }else{
             header("location:login.php?= password anda salah");
