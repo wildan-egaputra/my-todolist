@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="proses_regis.php" method="post">
+        <form action="proses_register.php" method="post">
             <div class="input">
                 <label for="username">username:</label>
                 <input type="text" name="username" required>
