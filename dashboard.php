@@ -31,7 +31,7 @@ $qq = mysqli_query($konek,$sql);
     </div>
     <div class="main">
         <div class="head">
-
+            <a href="create.php" class="tambah">TAMBAH</a>
         </div>
         <div class="container">
             <?php while($bar = mysqli_fetch_assoc($qq)){
@@ -44,6 +44,10 @@ $qq = mysqli_query($konek,$sql);
                     <p class=""><?= $bar['status']?></p>
                     <p class=""><?= $bar['username']?></p>
                     <p class=""><?= $bar['category']?></p>
+                    <div class="action">
+                        <a href="delete.php" class="delete">HAPUS</a>
+                        <a href="edit.php" class="edit">EDIT</a>
+                    </div>
                 </div>
                 <?php
             }
