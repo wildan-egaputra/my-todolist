@@ -18,12 +18,12 @@ $qq = mysqli_query($konek,$sql);
     <div class="container">
         <form action="proses_create.php">
             <div class="input">
-                <label for=""></label>
-                <input type="text" name="" required>
+                <label for="judul">judul:</label>
+                <input type="text" name="judul" required>
             </div>
             <div class="input">
-                <label for=""></label>
-                <input type="text" name="" required>
+                <label for="deskripsi">deskripsi</label>
+                <input type="text" name="deskripsi" required>
             </div>
             <select name="status">
                 <option value="pending">pending</option>
