@@ -8,7 +8,8 @@ $desk = $_POST['deskripsi'];
 $status = $_POST['status'];
 $cate = $_POST['id_category'];
 
-$sql = "INSERT INTO todo (judul,deskripsi,status,category,id_user) values ('$judul','$desk','$status',$status,$user)";
+$sql = "INSERT INTO todo (judul,deskripsi,status,id_category,id_user) values 
+        ('$judul','$desk','$status',$cate,$user)";
 $qq = mysqli_query($konek,$sql);
 
 if($qq){

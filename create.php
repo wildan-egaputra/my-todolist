@@ -16,7 +16,7 @@ $qq = mysqli_query($konek,$sql);
 </head>
 <body>
     <div class="container">
-        <form action="proses_create.php">
+        <form action="proses_create.php" method="post">
             <div class="input">
                 <label for="judul">judul:</label>
                 <input type="text" name="judul" required>
