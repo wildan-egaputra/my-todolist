@@ -30,7 +30,6 @@ $qq = mysqli_query($konek,$sql);
                 <option value="done">done</option>
             </select>
             <select name="id_category">
-                <option>--PILIH KATEGORI--</option>
                 <?php while($bar =mysqli_fetch_assoc($qq)){
                     ?>
                     <option value="<?= $bar['id_category']?>"> <?= $bar['category']?></option>
