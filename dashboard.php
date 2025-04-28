@@ -46,7 +46,7 @@ $qq = mysqli_query($konek,$sql);
                     <p class=""><?= $bar['category']?></p>
                     <div class="action">
                         <a href="delete.php" class="delete">HAPUS</a>
-                        <a href="edit.php" class="edit">EDIT</a>
+                        <a href="edit.php?id_todo=<?= $bar['id_todo'] ?>" class="edit">EDIT</a>
                     </div>
                 </div>
                 <?php
