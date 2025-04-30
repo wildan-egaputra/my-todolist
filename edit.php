@@ -38,9 +38,9 @@ $bar = mysqli_fetch_assoc($qq);
                 <?php 
                 $sql2 = "SELECT*FROM category";
                 $qq2 = mysqli_query($konek,$sql2);
-                while($bar =mysqli_fetch_assoc($qq2)){
+                while($bar2 =mysqli_fetch_assoc($qq2)){
                     ?>
-                    <option value="<?= $bar['id_category']?>"<?= $bar['id_category'] == $bar['id_category'] ? "selected" : ''?> > <?= $bar['category']?></option>
+                    <option value="<?= $bar2['id_category']?>"<?= $bar['id_category'] == $bar['id_category'] ? "selected" : ''?> > <?= $bar2['category']?></option>
                     <?php
                 }
                 ?>
